@@ -17,6 +17,8 @@ spec:
       containers:
       - name: nginx
         #image: nginx
+      nodeSelector:
+        kubernetes.io/arch: amd64
         image: m3t41/empty-nginx:v1
         resources:
           limits:
